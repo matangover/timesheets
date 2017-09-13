@@ -23,4 +23,9 @@ brew install https://raw.githubusercontent.com/turforlag/homebrew-cervezas/maste
 ```
 python fill_timesheet.py
 ```
-This will generate a `timesheet_filled_yyyy-mm-dd.pdf` file in the same directory. Print, sign, and spread the love. :) 
+This will generate two `timesheet_filled_yyyy-mm-dd.pdf` files in the same directory, one for the last week and one for the week before. Print, sign, and spread the love. :) 
+
+If you wish to fill out timesheets for arbitrary dates rather than for the last two weeks, run the following command (the specified dates must be Sundays):
+```
+python fill_timesheet.py yyyy-mm-dd yyyy-mm-dd [...]
+```
